@@ -52,6 +52,24 @@
       "revId": "abbc23cb5c262269cad22df30933fb1b9fc852ed",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4b713d8b_718ecfd5",
+        "filename": "keymaster_qcom.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 765,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2014-07-30T15:23:24Z",
+      "side": 1,
+      "message": "I dont want that sh... code in my device build :)",
+      "parentUuid": "4b713d8b_318457b6",
+      "revId": "abbc23cb5c262269cad22df30933fb1b9fc852ed",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
