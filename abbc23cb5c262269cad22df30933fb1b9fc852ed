@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b713d8b_91f60b59",
+        "filename": "keymaster_qcom.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 765,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2014-07-30T15:20:45Z",
+      "side": 1,
+      "message": "isnt this missing an r at the end anyway?",
+      "revId": "abbc23cb5c262269cad22df30933fb1b9fc852ed",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
