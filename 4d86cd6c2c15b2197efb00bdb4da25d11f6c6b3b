@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "cb2b6d62_a821dbaf",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2014-12-23T01:22:51Z",
+      "side": 1,
+      "message": "because not only 8974 uses QCOM_HARDWARE",
+      "parentUuid": "cb2b6d62_889df7c1",
+      "range": {
+        "startLine": 6,
+        "startChar": 31,
+        "endLine": 6,
+        "endChar": 38
+      },
+      "revId": "4d86cd6c2c15b2197efb00bdb4da25d11f6c6b3b",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cb2b6d62_28624bd7",
         "filename": "Android.mk",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2014-12-21T01:20:23Z",
       "side": 1,
       "message": "I am not sure that we need this cause we havnt done that heap_mask change in the rest of the code",
+      "range": {
+        "startLine": 11,
+        "startChar": 20,
+        "endLine": 11,
+        "endChar": 39
+      },
+      "revId": "4d86cd6c2c15b2197efb00bdb4da25d11f6c6b3b",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cb2b6d62_c8160f5b",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000173
+      },
+      "writtenOn": "2014-12-23T01:22:51Z",
+      "side": 1,
+      "message": "AOSP qcom hw repositories use the new ion heap mask. when you use QCOM_HARDWARE and the caf qcom hw repositories you use the old ion heap mask. So when QCOM_HARDWARE is enabled, every repository uses the old heap mask except keymaster, which explains why I added this ifdef",
+      "parentUuid": "cb2b6d62_28624bd7",
       "range": {
         "startLine": 11,
         "startChar": 20,
