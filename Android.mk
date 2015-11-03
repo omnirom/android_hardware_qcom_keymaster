@@ -10,6 +10,9 @@ endif
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 keymaster-def += -D_ION_HEAP_MASK_COMPATIBILITY_WA
 endif
+ifeq ($(TARGET_KEYMASTER_WAIT_FOR_QSEE),true)
+LOCAL_CFLAGS += -DWAIT_FOR_QSEE
+endif
 
 include $(CLEAR_VARS)
 
