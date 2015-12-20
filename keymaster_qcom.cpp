@@ -790,10 +790,6 @@ static int qcom_km_open(const hw_module_t* module, const char* name,
     ret = (*km_handle->QSEECom_start_app)((struct QSEECom_handle **)&km_handle->qseecom,
                          "/vendor/firmware/keymaster", "keymaster", 4096*2);
     if (ret) {
-        ret = (*km_handle->QSEECom_start_app)((struct QSEECom_handle **)&km_handle->qseecom,
-                         "/firmware/image", "keymaste", 4096*2);
-    }
-    if (ret) {
         ALOGE("Loading keymaster app failed");
         free(km_handle);
         return -1;
