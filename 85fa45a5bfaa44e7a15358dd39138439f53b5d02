@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "78209991_241d5c74",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2016-12-12T22:08:16Z",
+      "side": 1,
+      "message": "why add a separate ifeq with the same thing?",
+      "revId": "85fa45a5bfaa44e7a15358dd39138439f53b5d02",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
