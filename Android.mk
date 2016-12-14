@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 ifneq ($(TARGET_PROVIDES_KEYMASTER),true)
-ifneq ($(filter msm8960 msm8974 msm8226 msm8084 msm8952 msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter msm8960 msm8974 msm8226 msm8084 msm8916 msm8952 msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
 
 keymaster-def := -fvisibility=hidden -Wall
 ifeq ($(TARGET_BOARD_PLATFORM),msm8084)
@@ -9,8 +9,11 @@ keymaster-def += -D_ION_HEAP_MASK_COMPATIBILITY_WA
 endif
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
+ifneq ($(TARGET_BOARD_PLATFORM),msm8916)
 keymaster-def += -D_ION_HEAP_MASK_COMPATIBILITY_WA
 endif
+endif
+
 ifeq ($(TARGET_KEYMASTER_WAIT_FOR_QSEE),true)
 LOCAL_CFLAGS += -DWAIT_FOR_QSEE
 endif
