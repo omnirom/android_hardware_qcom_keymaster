@@ -9,7 +9,7 @@ keymaster-def += -D_ION_HEAP_MASK_COMPATIBILITY_WA
 endif
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-ifneq ($(TARGET_BOARD_PLATFORM),msm8916)
+ifneq ($(filter msm8916 msm8994,$(TARGET_BOARD_PLATFORM)),)
 keymaster-def += -D_ION_HEAP_MASK_COMPATIBILITY_WA
 endif
 endif
